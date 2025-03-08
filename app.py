@@ -1,7 +1,16 @@
 import streamlit as st
 import pickle
 import pandas as pd
-import requests  
+import requests 
+import gdown
+
+similarity_url = "https://drive.google.com/uc?export=download&id=16JwirbTk4hmyKe_fZegihJfogWJvC61v"
+output = "similarity.pkl"
+
+print("Downloading similarity.pkl from Google Drive...")
+gdown.download(similarity_url, output, quiet=False)
+print("Download complete!")
+
 
 movies_dict = pickle.load(open("movies.pkl", "rb"))
 movies = pd.DataFrame(movies_dict)
