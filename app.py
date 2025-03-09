@@ -64,7 +64,7 @@ def recommend(movie):
 
     return sorted_recommended_movies, sorted_recommended_posters,sorted_recommended_trailers
 
-st.header("🎬 Movie Recommendation System")
+st.header("🎬🍿 Movie Recommendation System")
 movies_list = movies["title"].values
 selectvalue = st.selectbox("Select a movie from dropdown", movies_list)
 
@@ -142,7 +142,7 @@ def fetch_trending_movies():
 
 
 
-st.subheader("🔥 Trending Movies This Week")
+st.subheader("🔥 Trending Movies This Week 🎞️")
 trending_movies, trending_posters = fetch_trending_movies()
 
 trend_cols = st.columns(5)
