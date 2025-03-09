@@ -8,7 +8,7 @@ file_id = "16JwirbTk4hmyKe_fZegihJfogWJvC61v"
 similarity_url = f"https://drive.google.com/uc?id={file_id}"
 
 output = "similarity.pkl"
-gdown.download(similarity_url, output, quiet=False)
+gdown.download(similarity_url, output)
 
 
 movies_dict = pickle.load(open("movies.pkl", "rb"))
