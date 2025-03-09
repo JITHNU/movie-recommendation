@@ -11,7 +11,6 @@ output = "similarity.pkl"
 gdown.download(similarity_url, output, quiet=False)
 
 
-
 movies_dict = pickle.load(open("movies.pkl", "rb"))
 movies = pd.DataFrame(movies_dict)
 similarity = pickle.load(open("similarity.pkl", "rb"))
