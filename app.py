@@ -4,11 +4,11 @@ import pandas as pd
 import requests 
 import gdown
 
-file_id = "16JwirbTk4hmyKe_fZegihJfogWJvC61v"
+file_id = "18bsfxwLy91vF2n3ZXRKX6WvR0GA-n3xV"
 similarity_url = f"https://drive.google.com/uc?id={file_id}"
 
 output = "similarity.pkl"
-gdown.download(similarity_url, output)
+gdown.download(similarity_url, output, quiet=False)
 
 
 movies_dict = pickle.load(open("movies.pkl", "rb"))
